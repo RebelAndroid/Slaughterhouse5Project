@@ -3,11 +3,91 @@
 <htlm>
   <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <div class="center">
-      <p>So paragraphs, much wow</p>
+      <h1>The Nature Of Time</h1>
+      <div class = "linkContainer">
+      <div><a href="index.html#clasical">Classical Mechanics</a></div>
+      <div><a href="index.html#relativistic">Relativistic Time</a></div>
+      <div><a href="index.html#unix">Unix Time</a></div>
+      <div><a href="index.html#psychological">Human Perception</a></div>
+      <div><a href="index.html#determinism">Determinism and Nondeterminism</a></div>
+      <div><a href="index.html#slaughterhouse5">Time in Slaughterhouse Five</a></div>
+      <div><a href="index.html#sources">Sources</a></div>
+      </div>
+      <br>
+      <a name = "classical">
+        <h2>Classical Mechanics</h2>
+        <p>
+          In classical mechanics time passes at an equal, fixed rate for all observers. If an hour passes for me, an hour passes for you, and an hour passes for everybody else, an hour would pass, 
+          even for aliens on a distant planet. In the <i>Principia</i>, Newton writes, <br><br><i>Absolute, true, and mathematical time, of itself, and from its own nature flows equably without regard to anything external, and by another name is called duration: relative, apparent, and common time, is some sensible and external (whether accurate or unequable) measure of duration by the means of motion, which is commonly used instead of true time; such as an hour, a day, a month, a year.</i>
+          <br><br>
+          Put simply, time moves at a fixed rate, and it is impossible to measure absolute time, only time relative to some other time. In regular life, this works, you don't experience time differently from anyone around you (though sometimes it might feel like it)
+          and you need some reference to understand time (saying "the year is 2020, only works because everyone is using the same reference point"). However, in some more exotic situations, Newton's idea of time doesn't really work.
+        </p>
+        </a>
+      <a name = "relativistic">
+      <h2>Relativistic Time</h2>
+      
+        <p>
+          When an object is in the presence of a strong gravitational field, or moving at high velocity, it's perception of time is changed. These changes are usually very small, but they can be measured. For example, in 1971, 4 atomic clocks were flown around the world on commercial jets and were measured against on clock on the ground in the Hafele-Keating experiment. Going east, the clocks were predicted to be 40 nanoseconds behind the ground clock, in the test they were 59 nanoseconds behind, going west, the clocks were predicted to be 275 nanoseconds ahead, in actuality, the were 273 nanoseconds ahead. The experiment accounted for time dilation due to gravity and due to velocity.
+          Time dilation also has real impacts on everyday life, the clocks on GPS satellites have to account for time dilation, if they didn't, GPS positions would drift from their correct values at a rate of 10 kilometers per day.
+        </p>
+      </a>
+      <a name = "unix">
+        <h2>Unix Time</h2>
+        <p>
+          With an understanding of what time is, the next question is, how can we represent this time. When you write dates you probably use either month/day/year or day/month/year, and when you write times within a day, you probably use 24 hours of 60 minutes (though you probably split those 24 hours into a 12 hour am and pm).
+          Well it is possible for a computer to represent time in this way, it can be rather inconvenient, so computers usually use unix time. Unix time is very simple, it is the number of seconds since midnight, 
+          january 1st, 1970, this makes adding and subtracting time very easy, just add or subtract the number of seconds. On many systems the number of seconds is represented as a signed 32 bit integer, because of
+           how these numbers work the largest number that can be stored is 2,147,483,647 and adding one to that number results in the (incorrect) answer −2,147,483,648. Because of this, any computer using an unsigned 32 bit number to represent time will think that December 13, 1901 (2 billion seconds before 1970) is the day after January 19, 2038 (2 billion seconds after 1970). There has already been a shift to using 64 bit numbers (which give hundreds of billions of years of time), so the error will probably only happen on very old computers.
+        </p>
+      </a>
+      <a name = "psychological">
+        <h2>Human Perception of Time</h2>
+        <p>
+          Humans perceive time in some very strange ways that have nothing to due with actual changes in the rate at which time passes. One example of this is Chronostasis, or the "Stopped Clock Illusion." When you move your eyes to look at something different
+           your vision is affected by strong motion blur, to prevent this, your brain fills in the motion blur with whatever you are looking at after the eye movement is complete, this makes the perception of the moment in time longer than it actually is. For example, if you quickly glance up
+           to look at an analog clock your brain fills in the blur time with the clock's second hand at it's current position, making it seem like the clock hand is moving slower than it should. Time perception can also depend
+           on emotion, age, an events position in a sequence of events, drugs like caffeine and amphetamines, body temperature, and clinical disorders.
+        </p>
+      </a>
+      <a name = "determinism">
+        <h2>Determinism and Nondeterminism</h2>
+        <p>
+          Time and causality are major ideas in philosophy. In philosophy, Determinism is the belief that all events are necessary and certain consequences of the past. This implies that free will does not exist
+           does not exist, any individual make decisions based on the past, not out of any personal choice. Different philosophies have different beliefs about determinism and how determinism (or the lack thereof) affect
+           free will and morality. "Hard" determinists believe that the universe is deterministic and determinism is incompatible with free will. They also believe that no one is morally responsible for their actions because they could
+           not have done anything else (though some believe that people should still be considered good or bad, even though there is no logical basis for it). The opposite of hard determinism is libertarianism (which is entierly unrelated to the political ideology of libertarianism). Libertarians believe that the universe is not deterministic and free will does exist.
+           Imbetween is Compatibilism (or "soft" determinism), the belief that determinism is compatible with free will (and thus, moral responsibilty). Many compatibilists argue that if you have the choice to
+           do something, you have free will, even if your choice is inevitable because of determinism.
+        </p>
+      </a>
+      <a name = slaughterhouse5>
+        <h2>Time in Slaughterhouse Five</h2>
+        <p>
+          Kurt Vonnegut uses Slaughterhouse Five to show his belief in free will. The Tralfamadorians are hard determinists, they can see all of time at once (which requires determinism, otherwise the future would be constantly changing). 
+          While the Tralfamadorians are presented in a way that makes them seem to be incredibly wise sages who seek to tell humanity about the true nature of the universe, Vonnegut shows how their philosophy is wrong through their actions.
+          For example, the Tralfamadorians kidnap Billy Pilgrim and Montana Wildhack and keep them in a zoo on Tralfamadore. It is reasonable to think that the Tralfamadorians have no moral problems with taking
+          free will away from Billy and Montana because they don't believe in free will. Additionally, the Tralfamadorians know exactly how the universe will end, and they choose to do nothing about it. While it may appear that Vonnegut
+          believes the Tralfamadorians philosophy, a closer look reveals the exact opposite.
+        </p>
+      </a>
+      <a name="sources">
+        <h2>Sources</h2>
+        <p>https://en.wikisource.org/wiki/Page:Newton%27s_Principia_(1846).djvu/83<br>
+          http://hyperphysics.phy-astr.gsu.edu/hbase/Relativ/airtim.html<br>
+          http://www.astronomy.ohio-state.edu/~pogge/Ast162/Unit5/gps.html<br>
+          https://en.wikipedia.org/wiki/Year_2038_problem<br>
+          https://en.wikipedia.org/wiki/Time_perception<br>
+          https://www.britannica.com/topic/problem-of-moral-responsibility<br>
+          Slaughterhouse Five by Kurt Vonnegut</p>
+          
+      </a>
     </div>
   </body>
 </htlm>

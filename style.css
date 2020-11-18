@@ -2,10 +2,40 @@
 
     margin: auto;
   
-    width: 60%;
+    width: 70%;
   
-    border: 5px solid #FFFF00;
+    border: 1.5px solid #5a5a5a;
   
-    padding: 10px;
-  
-  }
+    padding: 70px;
+
+    background-image: url("CenterBackground.png");
+}
+
+body{
+  background-image: url("background.png");
+}
+
+h1{
+  text-align: center;
+  font-size: 300%;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+h2{
+  text-align: center;
+  font-size: 200%;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+p{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.linkContainer{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
